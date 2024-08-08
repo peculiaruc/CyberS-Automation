@@ -1,0 +1,76 @@
+#  Object-orriented programming (OOP) organizes code around objects, which are entites that
+# encapusulates date(attributes) and related behavior(methods). It creates reuaable and modular code
+
+# CLASSES:
+# Classes act as blueprints for creating objects. They define the attributes and methods that objects of
+#  that class will possess. You define a class using the class keyword followed by the class name and a colon. 
+# The class body contains the definition of attributes (using self) and methods.
+
+# Example:
+
+class Animal:
+    # A simple Animal class
+        
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+    
+    def make_sound(self):
+        print("Generic animal sound")
+
+
+# Creating objects (instances) of the Animal class
+dog = Animal("Buddy", "Dog")
+cat = Animal("Whiskers", "Cat")
+
+print(dog.name, dog.species)  # Output: Buddy Dog
+print(cat.name, cat.species)  # Output: Whiskers Cat
+
+# In this example, the Animal class defines attributes (name and species) and a method (make_sound). 
+#  We create objects (dog and cat) of the Animal class, and they inherit the attributes and
+#  methods defined in the class.
+
+
+# INHERITANCE 
+
+# Inheritance allows you to create new classes (subclasses) that inherit attributes and methods
+#  from existing classes (superclasses). This promotes code reusability and enables
+#  the creation of specialized classes.
+
+# Example
+
+class Dog(Animal):
+    """A Dog subclass inheriting from Animal"""
+
+    def make_sound(self):
+        print("Woof!")
+
+# Creating a Dog object
+fido = Dog("Fido", "Dog")
+fido.make_sound()  # Output: Woof!
+
+# Here, the Dog class inherits from Animal. 
+# It redefines the make_sound method to produce a dog-specific sound.
+
+
+# POLYMORPHISM  
+
+# Polymorphism allows objects of different classes to respond differently to the same method call. 
+# This enables flexible and dynamic behavior in your code.
+
+# Example
+
+def greet_animal(animal):
+    animal.make_sound()
+
+greet_animal(dog)  # Output: Woof!
+greet_animal(cat)  # Output: Generic animal sound (from Animal class)
+
+dog.make_sound()  # Output: Generic animal sound
+
+# In this example, the greet_animal function takes an animal object as input and calls its make_sound method. 
+# Since dog and cat are subclasses of Animal with overridden make_sound methods, 
+# polymorphism ensures the appropriate sound is played for each object.
+
+
+

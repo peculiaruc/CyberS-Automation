@@ -1,0 +1,30 @@
+
+def ask_question(question, answer_choices, correct_answer):
+  """Asks a quiz question and returns if the answer is correct."""
+  print(question)
+  for choice in answer_choices:
+    print(choice)
+  user_answer = input("Enter your answer: ")
+  return user_answer.lower() == correct_answer.lower()
+
+def main():
+  """Runs the quiz application."""
+  questions = [
+    {"question": "What is the capital of France?", "answer_choices": ["a) London", "b) Paris", "c) Berlin"], "correct_answer": "b)"},
+    {"question": "What is the tallest mountain in the world?", "answer_choices": ["a) Mount Everest", "b) K2", "c) Kangchenjunga"], "correct_answer": "a)"}
+  ]
+  score = 0
+  for question in questions:
+    if ask_question(**question):
+      score += 1
+  print("You scored", score, "out of", len(questions), "questions.")
+
+if __name__ == "__main__":
+  main()
+
+# This code defines functions ask_question and main. The ask_question function takes a question,
+#  answer choices, and the correct answer as input and displays them to the user. It then checks 
+# if the user's answer matches the correct answer (converted to lowercase for case-insensitive comparison).
+#  The main function defines a list of questions with answer choices and the correct answer. 
+# It iterates through the questions, calls ask_question for each one, and keeps track of the score. 
+# Finally, it prints the user's score.

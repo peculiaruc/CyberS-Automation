@@ -1,0 +1,76 @@
+# Data structures are fundamental building blocks for organizing and storing Data
+# Types ; Lists Tuples, Dictionaries Sets
+
+# 1. Lists
+# Lists are ordered, mutable collection of elements enclosed in square brackets []. 
+# It stores data types like numbers, strings and even other lists. It stores sequences of items
+
+# Example
+
+fruits = ["mango", "pear", "avacados"]
+numbers = [1, 2, 3, 4, 5]
+mixed_data = [10, "hello", True]
+
+# Accessing elements using index (start from 0)
+first_fruit = fruits[0] -> first_fruit will be "manago"
+
+# Modifying elements
+fruits[1] = "apple" -> modifies the second element
+
+# Looping through elements
+for fruit in fruits:
+    print(fruit)
+
+
+# Tuples: Ordered, immutable colection of elements similar to lists but enclosed
+# parentheses(), Tuples are usefu;l for data that shouldn't be modified after creation
+
+# Example:
+
+coordination = (10, 20) - represents a point (x, y)
+month_names = ("Jan", "feb", "March")
+
+# Accessing elements using index
+x_coordinate = coordinate(10) - x_coordinate will be  10
+
+# Tuples are immuatable (cannot modify elements)
+month_names[1] = "June" - This will cause an error 
+
+# Dictionaries: Unordered collections of key-valuev pairs enclosed in curly
+# brace {}, Keys must be unique and immutable(often strings or numbers), values can be any data type. uses specific keys to access element
+
+# example
+person = {"name": "Alice", "age": 30, "city": "New York"}
+
+# Accessing elements using keys:
+name = person["name"] - namewill be "Alice"
+
+# Adding new key-value pairs 
+person["occupation"] = "Software Engineer"
+
+# Looping through key-value pairs
+
+for key, value in person.items():
+    print(key, ":", value)
+
+
+    # Set: Unordered collections of unique element enclosed in curly braces {}
+    # Sets are useful for eliminating duplicates performing set operations like union,
+    # intersection and different
+
+    # Example 
+
+    letters = {"a", "b", "c", "b"} # Duplicates are automatically removed
+
+    # Adding elements
+    letters.add("d")
+
+    # checking for membership 
+    if "e" in letter:
+        print("e is in the set")
+    
+   # Set operations (requires importing the set module) from sets import union, intersection
+        unique_letters = union(letters, {"x", "y"})
+    common_letters = intersection(letters. {"a", "e", "i"})
+
+    # STACKS, QUEUES, TREES, GRAPHS

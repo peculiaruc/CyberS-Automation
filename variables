@@ -1,0 +1,7 @@
+# Variable:
+
+
+name = "Bob"
+age = 25
+print("Name:", name)
+print("Age:", age)

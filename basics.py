@@ -1,7 +1,19 @@
+# Topic:
+
+# Basics: fundamental syntax, data types,variables and operations
+# Control Flow: conditional statements(if-else) and loops(for, while).Make deciions and repeat tasks based on conditions.
+# Functions: define functions to organise codes, improve reusability etc.
+# Data structures:Lists, tuples, dictionaries, sets(store and organize data)
+# Object-oriented Programming(OOP): Classes, objects, inheritance, polymorphism(to structure codes in a modular and reusable way)
+
+
+
 # Basics: fundamental syntax, data types,variables and operations
 
 # Fundamental rules= 
 # 1. Operators:
+
+# A. Arithmetic Operators
 #  a. Exponent **, eg    
   2**8 == 256 # type: ignore
 #  b. Modulus/remainder %, eg 
@@ -19,14 +31,18 @@
 
 # order of operation -> ** follow by /, //, % and follow by + and -
 
+# B. Comparison Operators:
+#  a. Equal to  ==
+#  b. Not equal to  !=
+#  c. Great than >
+#  d. Less than < 
+#  e. Greater than or equal to >=
+#  f. Less than or equal to <=
+
+# C. Logical Operators: and, or, not 
+
 # 2. Data types:
 #  a. Integer (numbers) eg age = 30 
 #  b. float (decimal numbers) eg pi = 3,456
 #  c. String (squencses of characters enclosed in quotes) eg "My name is Pec"
 #  d. Booleans (logical values, True or False) eg jake is running = True or false
-
-# Control Flow: conditional statements(if-else) and loops(for, while).
-# Make deciions and reapt tasks based on conditions.
-# Functions: define functions to organise codes, improve reusability etc.
-# Data structures: Lists, tuples, dictionaries, sets(store and organize data)
-# Object-oriented Programming(OOP): Classes, objects, inheritance, polymorphism(to structure codes in a modular and reusable way)

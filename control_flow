@@ -1,0 +1,97 @@
+# Control Flow: conditional statements(if-else) and loops(for, while).Make deciions and repeat tasks based on conditions.
+
+# Control flow helps in making decisions and alter the programs excution based on certain conditions eg if-else statement
+
+# if-else statement: 
+# the if-else statement evaluates a condition, if the condition is True, the code indented below the if statement executes.
+# if the condition is false, the code indented below the else statement (if present) executes
+
+# Example
+
+from msilib import sequence
+
+
+age = 20
+
+if age <= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligilble to vote.")
+
+
+if age >= 18:
+    print("You are eligible to vote")
+else:
+    print("you are   not eligible to vote")
+
+# elif statement:
+# Use to chain multiple conditions. Checks for alternative conditions if the initial if condition fails
+
+# Example
+
+name =" Ann"
+age = 15
+
+if age >= 18:
+    print(name, "is eligible to vote.")
+elif age >= 13:
+    print(name, "is a teenager.")
+else:
+    print(name, "is a child")
+
+
+# Loops
+# Loops are used to execute a block of code repeatedly. loop constructors are "for" and "while"
+
+# for loop: A for loop iterates over a sequence (like a list, tuple, string or range) and executes a block of code for each item in the sequence.
+#  Syntax:
+#for item in sequence:
+    # code to be executed
+
+# Example 1
+
+fruits = ["apples", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
+# Example 2 with range
+
+for i in range(5):
+    print(i)
+
+
+# While Loops
+
+# A while loop repeatedly execute a block of code as long as a given condition is true
+#  Syntax:
+#   while condition:
+      # code to be executes
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+
+# Loop Control Statements
+#  1. break: Terminates the loop entirely
+#  2. continue: Skips the current iteration and moves to the next
+
+# Example:
+
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num == 3:
+        break
+    print(num)
+
+
+# Nested Loops
+# loops can be next within each other
+
+# Example
+
+for i in range(3):
+    for j in range(4):
+        print(i, j)
